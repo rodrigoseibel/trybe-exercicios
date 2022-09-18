@@ -1,0 +1,13 @@
+h1, p {
+    text-align: center;
+}
+ol, ul {
+    list-style: none;
+}
+ul:hover{
+    background-color: blueviolet;
+}
+ul:active{
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
