@@ -1,0 +1,12 @@
+img {
+    max-width:300px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
