@@ -20,40 +20,38 @@
         </label>
         <br>
         <label for=""> E-mail :
-            <input type="email" name="nome" id="email" placeholder="Digite seu Nome">
+            <input type="email" name="nome" id="email" placeholder="Digite seu E-mail">
         </label>
         <br>
         <!-- Opcões -->
-        <label> Destino Preferido:
+        <label   > Destino Preferido:
             <br>
-            <input type="radio" id="opcao1" > Cidade 
-            <input type="radio" id="opcao2" > Campo
-            <input type="radio" id="opcao3" > Praia
-            <input type="radio" id="opcao4" > Montanha
+            <input type="radio" id="opcao12" > Cidade 
+            <input type="radio" id="opcao1" > Campo
+            <input type="radio" id="opcao1" > Praia
+            <input type="radio" id="opcao1" > Montanha
         </label>
         <br>
 
         <!-- Caixa texto -->
         <p> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
 
-        </p>
-        <textarea rows="10" cols="40" maxlength="500"></textarea>
+        </p  >
+        <textarea  id= "texto" rows="10" cols="40" maxlength="500"></textarea>
 
         <br>
 
         <!-- Data -->
-        <label> Qual a melhor data para realizar sua viagem?
-
-
-            <input type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
-            <input type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
-            <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
+        <label  > Qual a melhor data para realizar sua viagem?
+            <input id="1" type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
+            <input id="2" type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
+            <input id="3" type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
         </label>
         <br>
 
         <!-- Opcoes2 -->
-        <form>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? <br>
-            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"> Concorda ?
+        <form  action="" > Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? <br>
+            <input   TYPE="checkbox" NAME="OPCAO" VALUE="op1"> Concorda ?
                 <br>
             Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. <br>
 
@@ -68,9 +66,26 @@
 <br>
 
 <!-- Botoes -->
+<form method="post" action="">
+<input id="botao" type="" class="botaoEnviar" value="Enviar">
+<input type="button" name="limpar" value="Limpar" onclick="limparForm();"  >
 
-<button id="botao" type="submit" class="botaoEnviar">Enviar</button>
-<button id="botao" type="submit" class="botaoApagar">Apagar</button>
-    
+</form>
+
+<script>
+    function limparForm (){
+        document.getElementById('nome-completo').value = "";
+        document.getElementById('email').value = "";
+        document.getElementById('opcao12').value = "";
+        document.getElementById('texto').value = "";
+        document.getElementById('1').value = "";
+        document.getElementById('2').value = "";
+        document.getElementById('3').value = "";
+        document.getElementById('').value = "";
+        
+
+    }
+
+</script>
 </body>
 </html>
