@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1> Header da Página</h1>
+    </header>
+    <fieldset>
+
+    <form action="" method="get" enctype="multipart/form-data" > 
+        <label for=""> Nome Completo :
+            <input type="text" name="nome" id="nome-completo" placeholder="Digite seu Nome">        
+        </label>
+        <br>
+        <label for=""> E-mail :
+            <input type="email" name="nome" id="email" placeholder="Digite seu Nome">
+        </label>
+        <br>
+        <!-- Opcões -->
+        <label> Destino Preferido:
+            <br>
+            <input type="radio" id="opcao1" > Cidade 
+            <input type="radio" id="opcao2" > Campo
+            <input type="radio" id="opcao3" > Praia
+            <input type="radio" id="opcao4" > Montanha
+        </label>
+        <br>
+
+        <!-- Caixa texto -->
+        <p> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+
+        </p>
+        <textarea rows="10" cols="40" maxlength="500"></textarea>
+
+        <br>
+
+        <!-- Data -->
+        <label> Qual a melhor data para realizar sua viagem?
+
+
+            <input type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
+            <input type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
+            <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
+        </label>
+        <br>
+
+        <!-- Opcoes2 -->
+        <form>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? <br>
+            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"> Concorda ?
+                <br>
+            Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. <br>
+
+            
+            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op2"> Concorda ?
+            </form>      
+
+    </form>
+
+</fieldset>
+
+<br>
+
+<!-- Botoes -->
+
+<button id="botao" type="submit" class="botaoEnviar">Enviar</button>
+<button id="botao" type="submit" class="botaoApagar">Apagar</button>
+    
+</body>
+</html>
