@@ -24,14 +24,15 @@
         </label>
         <br>
         <!-- Opcões -->
-        <label   > Destino Preferido:
+        <p> Destino Preferido: </p>
             <br>
-            <input type="radio" id="opcao12" > Cidade 
-            <input type="radio" id="opcao1" > Campo
-            <input type="radio" id="opcao1" > Praia
-            <input type="radio" id="opcao1" > Montanha
-        </label>
+            <input class="opcao" type="radio" name="opcao"  > Cidade </input> 
+            <input class="opcao" type="radio" name="opcao"  > Campo </input>
+            <input class="opcao"type="radio" name="opcao"  > Praia  </imput>
+            <input class="opcao" type="radio" name="opcao"  > Montanha </input>
+        
         <br>
+        
 
         <!-- Caixa texto -->
         <p> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
@@ -50,14 +51,13 @@
         <br>
 
         <!-- Opcoes2 -->
-        <form  action="" > Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? <br>
-            <input   TYPE="checkbox" NAME="OPCAO" VALUE="op1"> Concorda ?
+         <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? </p> <br>
+            <input  class="concorda" TYPE="checkbox" NAME="OPCAO" VALUE="op1"> Concorda ?
                 <br>
-            Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. <br>
-
+            <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>  <br>
             
-            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op2"> Concorda ?
-            </form>      
+            <INPUT class="concorda" TYPE="checkbox" NAME="OPCAO" VALUE="op2"> Concorda ?
+               
 
     </form>
 
@@ -76,12 +76,20 @@
     function limparForm (){
         document.getElementById('nome-completo').value = "";
         document.getElementById('email').value = "";
-        document.getElementById('opcao12').value = "";
         document.getElementById('texto').value = "";
         document.getElementById('1').value = "";
         document.getElementById('2').value = "";
         document.getElementById('3').value = "";
-        document.getElementById('').value = "";
+         const apagar =document.getElementsByClassName('opcao');
+         for ( let index = 0; index < apagar.length; index += 1){
+            apagar[index].checked = false ;
+         }
+         const apagar2 = document.getElementsByClassName('concorda');
+         for ( let i = 0; i < apagar2.length; i += 1){
+            apagar2[i].checked = false;
+         }
+         
+
         
 
     }
