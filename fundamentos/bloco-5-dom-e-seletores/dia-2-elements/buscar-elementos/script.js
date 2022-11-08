@@ -24,4 +24,4 @@
 
 //Agora acesse o terceiroFilho a partir de pai.
 
-console.log(document.getElementById('pai').lastElementChild.previousElementSibling);
+//console.log(document.getElementById('pai').lastElementChild.previousElementSibling);
